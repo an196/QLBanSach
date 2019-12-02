@@ -1,0 +1,37 @@
+body {
+   
+    line-height: normal;
+    font-family: Roboto,Helvetica,Arial,sans-serif;
+    background: #f4f4f4;
+    margin: 0px;
+
+}
+.modal-content 
+{
+    display: inline-block;
+}
+.modal-dialog .container {
+   
+    width: 870px;
+    height:750px;
+   }
+
+.modal-dialog .container .left {
+    width: 350px;
+    height: auto;
+    float: left;
+    padding: 25px 20px;
+    border-radius: 6px 0 0 6px;
+   
+}
+
+.modal-dialog .container .right {
+
+    margin-top: 20px;;
+    width: calc(100% - 390px);
+    height: auto;
+    float: right;
+    border-radius: 6px;
+
+}
+
