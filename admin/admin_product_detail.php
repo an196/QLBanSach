@@ -92,9 +92,9 @@
         <div id="content">
             <nav class="navbar navbar-expand-md bg-light">
                 <div class="container-fluid">
-                     <!-- The Modal add Product-->
+                     <!-- The Modal add -->
                     <div class="container-fluid">
-                        <div class="modal fade" id="modalAddProduct" style="margin-top: 150px;">
+                        <div class="modal fade" id="modalAdd" style="margin-top: 150px;">
                             <div class="modal-dialog modal-md">
                                 <div class="modal-content">
             
@@ -108,7 +108,7 @@
                                     <div class="modal-body">
                                         <div class="form-group">
                                             <label for="idBook">Mã sách:</label>
-                                            <input type="text" class="form-control" id="idProduct" name="idBook">
+                                            <input type="text" class="form-control" id="idBook" name="idBook">
                                         </div>
                                         <div class="form-group">
                                             <label for="nameBook">Tên sách:</label>
@@ -119,8 +119,8 @@
                                             <input type="text" class="form-control" id="nameAuthor" name="nameAuthor">
                                         </div>
                                         <div class="form-group">
-                                            <label for="idCetegory">Loại sách:</label>
-                                            <input type="text" class="form-control" id="idCetegory" name="idCetegory">
+                                            <label for="idCategory">Loại sách:</label>
+                                            <input type="text" class="form-control" id="idCategory" name="idCategory">
                                         </div>
                                         <div class="form-group">
                                             <label for="imageBook">Hình ảnh:</label>
@@ -169,9 +169,9 @@
                                 </div>
                             </div>
                         </div>
-                        <!--Close the Modal add Product-->
+                        <!--Close the Modal add-->
                         <!-- The Modal update Product-->
-                        <div class="modal fade" id="modalUpdateProduct" style="margin-top: 150px;">
+                        <div class="modal fade" id="modalUpdate" style="margin-top: 150px;">
                             <div class="modal-dialog modal-md">
                                 <div class="modal-content">
             
@@ -196,8 +196,8 @@
                                             <input type="text" class="form-control" id="update_nameAuthor">
                                         </div>
                                         <div class="form-group">
-                                            <label for="update_idCetegory">Loại sách:</label>
-                                            <input type="text" class="form-control" id="update_idCetegory">
+                                            <label for="update_idCategory">Loại sách:</label>
+                                            <input type="text" class="form-control" id="update_idCategory">
                                         </div>
                                         <div class="form-group">
                                             <label for="update_imageBook">Hình ảnh:</label>
@@ -225,7 +225,7 @@
                                         </div>
                                         <div class="form-group">
                                             <label for="update_description">Mô tả:</label>
-                                            <input type="text" class="form-control" id="update_description">
+                                            <input type="textarea" class="form-control" id="update_description">
                                         </div>
                                         <div class="form-group">
                                             <label for="update_idPublisher">Nhà xuất bản:</label>
@@ -252,7 +252,7 @@
                             <div class="card-header">
                               <i class="fas fa-table"></i>
                               DANH SÁCH SẢN PHẨM
-                              <button type="button" class="btn btn-success float-md-right" data-toggle="modal" data-target="#modalAddProduct">
+                              <button type="button" class="btn btn-success float-md-right" data-toggle="modal" data-target="#modalAdd">
                                 <i class="fas fa-plus"></i>  Thêm</button>
                             </div>
                             <div class="card-body">
@@ -271,13 +271,14 @@
                                             <th >Số lượng tồn</th>
                                             <th >Số lượng bán</th>
                                             <th >Số lượt xem</th>
+                                            <th >Mô tả</th>
                                             <th >Nhà xuất bản</th>
                                             <th >Xuất xứ</th>
                                             <th >Thao tác</th>
                                             </tr>
                                         </thead>
                                         <tbody id="myTable">
-                                        <?php include '../admin/admin_product_detail/dataTable.inc.php';?>
+                                            <?php include '../admin/admin_product_detail/dataTable.inc.php';?>
                                         </tbody>
                                     </table>
                               </div>
